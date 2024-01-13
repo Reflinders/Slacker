@@ -3,7 +3,7 @@ Class made for external thread activity control
 
 # Elaboration
 
-Slackers are essnentially external thread controllers — what I mean by this is that they can allow for threads to resume external threads outside of their reach. Slackers have two methods: `await` and `fulfill`. One function yields/pauses the thread in current use and the other reactivates the yielded thread, respectively. An example of this can be seen in the figure below:
+Slackers are essentially external thread controllers — what I mean by this is that they can allow for threads to resume external threads outside of their reach. Slackers have two methods: `await` and `fulfill`. One function yields/pauses the thread in current use and the other reactivates the yielded thread, respectively. An example of this can be seen in the figure below:
 
 ```lua
 local slacker = Slacker.new()
