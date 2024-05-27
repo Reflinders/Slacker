@@ -17,6 +17,9 @@ task.spawn(function()
   task.wait(5)
   slacker:fulfill() -- Resumes the thread
 end)
+
+-- other aliases for await include: defer, slack
+-- other alises for fulfill include: resume
 ```
 
-Get the jist? Also, there can be as many threads waiting to be fulfilled as you'd like, so do not fret about limits; and it should be noted that Slackers work on any environment — including the global — since Scripts are actually ran on threads!
+Also, there can be as many threads waiting to be fulfilled as you'd like, so do not fret about limits; and it should be noted that Slackers work on any environment — including the global — since Scripts are actually ran on threads!
